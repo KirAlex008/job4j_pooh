@@ -1,11 +1,11 @@
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 
 public class TriggerTest {
 
     @Test
     public void test() {
-        Assert.assertEquals(1, new Trigger().someLogic());
+        assertThat(1).isEqualTo(new Trigger().someLogic());
     }
 
 }
